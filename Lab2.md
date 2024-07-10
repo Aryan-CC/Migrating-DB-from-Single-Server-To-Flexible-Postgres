@@ -11,18 +11,22 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
 
     ![](Images/E2T1S2.png)
     
-3. Now on You have no storage mounted dialog box click on **Show advanced settings**.
+3. Now on You have no storage to create storage select **Mount storage account** and select the Storage account subscription from the drop down menu and then click on **Apply**.
 
-   ![](Images/E2T1S3.png)
+   ![](Images/image1.png)
    
-4. Follow the below-mentioned instructions and click on **Create Storage (3)**.
+5. To create a Storage account, select **I want to create a storage account**.
+   
+   ![](Images/image2.png)
+   
+7. Follow the below-mentioned instructions and click on **Create  (3)**.
 
     - Storage account: Enter **stacc<inject key="DeploymentID" enableCopy="false"/> (1)**
     - File Share: Enter **blob (2)**
 
-    ![](Images/E2T1S4.png)
+    ![](Images/iamge3.png)
     
-5. Follow the below steps to connect to the **Azure Database for PostgreSQL single server**:
+8. Follow the below steps to connect to the **Azure Database for PostgreSQL single server**:
 
    - Replace the `<DID>` with **<inject key="DeploymentID" enableCopy="true"/>** in the below command and run it from bash.
     
@@ -33,7 +37,7 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     
    ![](Images/E2T1S5.png)
     
-6. Run the below command in the Single Server databases to list all the extensions that are included and note them for further use.
+9. Run the below command in the Single Server databases to list all the extensions that are included and note them for further use.
     
     ```bash
     select * from pg_extension;
@@ -41,32 +45,32 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     
     ![](Images/extension.png)
     
-7. Minimize the bash and navigate to Azure Portal.
+10. Minimize the bash and navigate to Azure Portal.
     
-8. In Azure Portal, click on **Resource groups** from the Navigate panel.
+11. In Azure Portal, click on **Resource groups** from the Navigate panel.
     
     ![](Images/E2T1S8.png)
     
-9. From the Resource groups page, click on **ODL-SinToFlexible-<inject key="DeploymentID" enableCopy="false"/>**.
+12. From the Resource groups page, click on **ODL-SinToFlexible-<inject key="DeploymentID" enableCopy="false"/>**.
     
     ![](Images/E2T1S9.png)
     
-10. From the **Overview (1)** tab select the Azure Database for PostgreSQL flexible server **flexiblepgsql<inject key="DeploymentID" enableCopy="false"/> (2)**.
+13. From the **Overview (1)** tab select the Azure Database for PostgreSQL flexible server **flexiblepgsql<inject key="DeploymentID" enableCopy="false"/> (2)**.
     
     ![](Images/E2T1S10.png)
 
-11. Navigate to **Server Parameters (1)** blade under settings, and search for  **azure.extensions (2)** in the search bar.
+14. Navigate to **Server Parameters (1)** blade under settings, and search for  **azure.extensions (2)** in the search bar.
     
     ![](Images/E2T1S11.png)
     
-12. Select the list of extensions obtained by running the command in step-6 on your Single server database to this server parameter and click **Save**.
+15. Select the list of extensions obtained by running the command in step-6 on your Single server database to this server parameter and click **Save**.
     
     ![](Images/save.png)
     
     
     > **Note:** You should wait for the deployment to complete before proceeding further.
        
-13. Once the deployment has succeeded, click on **Go to resource**.
+16. Once the deployment has succeeded, click on **Go to resource**.
     
     ![](Images/E2T1S13.png)
 
