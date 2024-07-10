@@ -15,16 +15,16 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
 
    ![](Images/iimage1.jpg)
    
-5. To create a Storage account, select **I want to create a storage account**.
+5. To create a Storage account, select **I want to create a storage account** and Click on **Next**.
    
-   ![](Images/image2.png)
+   ![](Images/iimage2.png)
    
 7. Follow the below-mentioned instructions and click on **Create**.
 
     - Storage account: Enter **stacc<inject key="DeploymentID" enableCopy="false"/>**
     - File Share: Enter **blob**
 
-    ![](Images/image3.png)
+    ![](Images/iimage3.jpg)
     
 8. Follow the below steps to connect to the **Azure Database for PostgreSQL single server**:
 
