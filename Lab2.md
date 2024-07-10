@@ -11,22 +11,25 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
 
     ![](Images/E2T1S2.png)
     
-3. Now on You have no storage to create storage select **Mount storage account** and select the Storage account subscription from the drop down menu and then click on **Apply**.
+3. Now on You have no storage to create storage account select **Mount storage account** and select the Available subscription from the drop down menu and then click on **Apply**.
 
-   ![](Images/iimage1.jpg)
+   ![](Images/storage-getting.png)
    
-5. To create a Storage account, select **I want to create a storage account** and Click on **Next**.
+5. To create a storage account, select **I want to create a storage account** and Click on **Next**.
    
-   ![](Images/iimage2.png)
+   ![](Images/storage-mount.png)
    
-7. Follow the below-mentioned instructions and click on **Create**.
+7. Follow the below-mentioned instructions and click on **Create**. **(6)**
+   
+    - **Subscription**: Default - Pre-assigned subscription. **(1)**
+    - **Resource group**: ODL-SinToFlenxible-<inject key="Deployment ID" enableCopy="false"></inject> **(2)**
+    - **Region**: Select **<inject key="Region" enableCopy="false" />** **(3)**
+    - **Storage account**: Enter **stacc<inject key="DeploymentID" enableCopy="false"/>** **(4)**
+    - **File Share**: Enter **blob** **(5)**
 
-    - Storage account: Enter **stacc<inject key="DeploymentID" enableCopy="false"/>**
-    - File Share: Enter **blob**
-
-    ![](Images/iimage3.jpg)
+    ![](Images/storage-create.png)
     
-8. Follow the below steps to connect to the **Azure Database for PostgreSQL single server**:
+9. Follow the below steps to connect to the **Azure Database for PostgreSQL single server**:
 
    - Replace the `<DID>` with **<inject key="DeploymentID" enableCopy="true"/>** in the below command and run it from bash.
     
@@ -37,7 +40,7 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     
    ![](Images/E2T1S5.png)
     
-9. Run the below command in the Single Server databases to list all the extensions that are included and note them for further use.
+10. Run the below command in the Single Server databases to list all the extensions that are included and note them for further use.
     
     ```bash
     select * from pg_extension;
@@ -45,32 +48,32 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     
     ![](Images/extension.png)
     
-10. Minimize the bash and navigate to Azure Portal.
+11. Minimize the bash and navigate to Azure Portal.
     
-11. In Azure Portal, click on **Resource groups** from the Navigate panel.
+12. In Azure Portal, click on **Resource groups** from the Navigate panel.
     
     ![](Images/E2T1S8.png)
     
-12. From the Resource groups page, click on **ODL-SinToFlexible-<inject key="DeploymentID" enableCopy="false"/>**.
+13. From the Resource groups page, click on **ODL-SinToFlexible-<inject key="DeploymentID" enableCopy="false"/>**.
     
     ![](Images/E2T1S9.png)
     
-13. From the **Overview (1)** tab select the Azure Database for PostgreSQL flexible server **flexiblepgsql<inject key="DeploymentID" enableCopy="false"/> (2)**.
+14. From the **Overview (1)** tab select the Azure Database for PostgreSQL flexible server **flexiblepgsql<inject key="DeploymentID" enableCopy="false"/> (2)**.
     
     ![](Images/E2T1S10.png)
 
-14. Navigate to **Server Parameters (1)** blade under settings, and search for  **azure.extensions (2)** in the search bar.
+15. Navigate to **Server Parameters (1)** blade under settings, and search for  **azure.extensions (2)** in the search bar.
     
     ![](Images/E2T1S11.png)
     
-15. Select the list of extensions obtained by running the command in step-6 on your Single server database to this server parameter and click **Save**.
+16. Select the list of extensions obtained by running the command in step-6 on your Single server database to this server parameter and click **Save**.
     
     ![](Images/save.png)
     
     
     > **Note:** You should wait for the deployment to complete before proceeding further.
        
-16. Once the deployment has succeeded, click on **Go to resource**.
+17. Once the deployment has succeeded, click on **Go to resource**.
     
     ![](Images/E2T1S13.png)
 
