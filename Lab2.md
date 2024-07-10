@@ -19,12 +19,12 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
    
    ![](Images/image2.png)
    
-7. Follow the below-mentioned instructions and click on **Create  (3)**.
+7. Follow the below-mentioned instructions and click on **Create**.
 
-    - Storage account: Enter **stacc<inject key="DeploymentID" enableCopy="false"/> (1)**
-    - File Share: Enter **blob (2)**
+    - Storage account: Enter **stacc<inject key="DeploymentID" enableCopy="false"/>**
+    - File Share: Enter **blob**
 
-    ![](Images/iamge3.png)
+    ![](Images/image3.png)
     
 8. Follow the below steps to connect to the **Azure Database for PostgreSQL single server**:
 
