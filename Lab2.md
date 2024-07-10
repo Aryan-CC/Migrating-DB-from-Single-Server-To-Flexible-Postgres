@@ -13,7 +13,7 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     
 3. Now on You have no storage to create storage select **Mount storage account** and select the Storage account subscription from the drop down menu and then click on **Apply**.
 
-   ![](Images/image1.png)
+   ![](Images/iimage1.jpg)
    
 5. To create a Storage account, select **I want to create a storage account**.
    
