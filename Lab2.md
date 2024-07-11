@@ -9,7 +9,7 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     ![](Images/E2I1S1.png)
 2. After launching the Azure Cloud Shell, select the **Bash** option.
 
-    ![](Images/E2T1S2.png)
+    ![](Images/create-bash.png)
     
 3. Now on You have no storage to create storage account select **Mount storage account** and select the Available subscription from the drop down menu and then click on **Apply**.
 
