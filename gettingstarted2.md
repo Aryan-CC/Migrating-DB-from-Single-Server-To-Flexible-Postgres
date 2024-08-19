@@ -21,6 +21,8 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
     
 ## Task 1: Log in to Azure Portal and verify the pre-deployed resources
 
+In this task you will be Signing in to Azure Portal.
+
 1. Open Azure Portal from the desktop by double-clicking on it.
     
    ![](Images/azure%20portal.png)
@@ -37,7 +39,7 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
    ![](https://github.com/CloudLabsAI-Azure/AIW-SAP-on-Azure/blob/main/media/M2-Ex1-portalsignin-2.png?raw=true)
 
-1. If you see the pop-up **Action Required**, click **Ask Later**.
+4. If you see the pop-up **Action Required**, click **Ask Later**.
 
    ![](Images/action.png)
 
@@ -49,12 +51,13 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
 
 7. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
-1. Now you can see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
+8. Now you can see the Azure Portal Dashboard, click on **Resource groups** from the Navigate panel to see the resource groups.
 
    ![](https://github.com/CloudLabsAI-Azure/AIW-SAP-on-Azure/blob/main/media/M2-Ex1-rg.png?raw=true)
  
- 1. We have pre-deployed all the required resources already and you will be using them throughout the lab.
- 
- ## Summary
+9. We have pre-deployed all the required resources already and you will be using them throughout the lab.
+
+## Summary
 
 In this exercise, you signed into the Azure Portal and reviewed the pre-deployed resources.
+ 
