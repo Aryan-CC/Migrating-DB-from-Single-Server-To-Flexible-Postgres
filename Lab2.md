@@ -98,7 +98,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     - Migration name: Enter **Migrate-single-to-flexible-server (1)**
     - Migration option choose **Validate and Migrate**
     
-      ![](Images/img2-mig.png)
+        ![](Images/img2-mig.png)
 
  3. Click **Next:Connect to Source >** and on the **Source** tab, and follow the below-mentioned instructions:
     
@@ -108,7 +108,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     - Password: Enter the value **<inject key="PostGre SQL Password" enableCopy="true"/> (4)**
     - Test Connection: Click on **Connect to Source**
   
-      ![](Images/img3-mig.png)
+        ![](Images/img3-mig.png)
     
  4. Click **Next: Select migration target** and under this tab, follow the below-mentioned instructions:
     
@@ -232,6 +232,8 @@ In this task, you will migrate your existing database from a PostgreSQL single s
    \du
    ```
    ![](Images/sqluser1.png) 
+
+<validation step="5cd02f3f-7fe2-4b89-92a1-f69fae7306fd" />
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
