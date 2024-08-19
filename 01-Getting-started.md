@@ -1,4 +1,4 @@
-# Getting Started with the lab
+# Getting Started with Migrate from Single Server to Postgresql SQL Server lab.
 
 ## Overview
 
