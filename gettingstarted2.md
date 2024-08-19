@@ -1,4 +1,4 @@
-# Getting Started with the lab
+# Getting Started with Migrate from Single Server to Postgresql SQL Server Lab
 
 ## Overview
 
@@ -57,4 +57,4 @@ In this exercise, you will log in to the Azure Portal and review the pre-deploye
  
  ## Summary
 
-* In this exercise, you signed into the Azure Portal and reviewed the pre-deployed resources.
+In this exercise, you signed into the Azure Portal and reviewed the pre-deployed resources.
