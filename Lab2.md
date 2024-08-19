@@ -97,6 +97,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     
     - Migration name: Enter **Migrate-single-to-flexible-server (1)**
     - Migration option choose **Validate and Migrate**
+      
     
         ![](Images/img2-mig.png)
 
