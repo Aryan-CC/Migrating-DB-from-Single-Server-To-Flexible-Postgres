@@ -4,7 +4,13 @@
  the cloud with ease. With features such as automated backups, high availability, and security built-in, Azure Database for PostgreSQL enables reliable and secure operations for applications requiring PostgreSQL 
  databases. Additionally, it provides compatibility with existing PostgreSQL tools and extensions, ensuring a seamless transition for developers and administrators.
 
+## Lab Objectives:
+
+- Task 1: Deploy Azure Database for PostgreSQL servers
+
 ## Task 1: Deploy Azure Database for PostgreSQL servers
+
+In this task, you will be deploying a Azure Database for PostgreSQL through Azure portal.
 
 1. In the Azure portal, in the **Search resources, services, and Docs (G+/)** bar search for **Azure Database for PostgreSQL servers** and click on it.
 
@@ -41,6 +47,10 @@
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
+## Summary
+
+In this lab, you have deployed a Azure Database for PostgreSQL servers without firewall rules through Azure portal.
    
 
    

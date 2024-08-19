@@ -1,8 +1,15 @@
 # Lab 2: Migrating the database from a Single PostgreSQL server to Flexible PostgreSQL Server using an offline method
 
-In this exercise, you will be migrating the database from a Single PostgreSQL server to a Flexible PostgreSQL Server using the new Migration (Preview) tool.
+In this Lab, you will be migrating the database from a Single PostgreSQL server to a Flexible PostgreSQL Server using the new Migration (Preview) tool.
+
+## Lab Objectives:
+
+- Task 1: Enable extension
+- Task 2: Migrate Data Base from Azure Database for PostgreSQL single server
 
 ## Task 1: Enable extension
+
+In this task, you will enable the necessary extensions on a flexible server in Azure Database for PostgreSQL to support specific functionalities required by your applications.
 
 1. In the **Azure portal**, open the Azure Cloud Shell by clicking on the cloud shell icon in the top menu bar.
 
@@ -38,7 +45,7 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
        ```
    - Copy and paste the value **<inject key="PostGre SQL Password" enableCopy="true"/>** as Password and hit **Enter**
     
-   ![](Images/E2T1S5.png)
+     ![](Images/E2T1S5.png)
     
 10. Run the below command in the Single Server databases to list all the extensions that are included and note them for further use.
     
@@ -80,7 +87,8 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     
 ## Task 2: Migrate Data Base from Azure Database for PostgreSQL single server
 
-    
+In this task, you will migrate your existing database from a PostgreSQL single server to a flexible server, ensuring seamless operation in the new environment.
+
 1. Now navigate back to **Azure Database for PostgreSQL Flexible Server** resource page and select **Migration (1)** and click on **+ Create (2)**.
     
      ![](Images/img1-mig.png)
@@ -159,19 +167,22 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     cd C:\Program Files\PostgreSQL\11\bin
     ```
                                                                                      
-    - Replace the `<DID>` with **<inject key="DeploymentID" enableCopy="true"/>** in the below command and run it.
+17. Run the below command.
+
     ```
     pg_dumpall -r --host=pgsql<inject key="DeploymentID" enableCopy="true"/>.postgres.database.azure.com --port=5432 --username=demouser@pgsql<inject key="DeploymentID" enableCopy="true"/> --database=sampledb > roles.sql
     ```
     
-    - Replace the `<DID>` with **<inject key="DeploymentID" enableCopy="true"/>** in the below command and run it.
+18. Run the below command.
+
     ```
     psql -f roles.sql --host=flexiblepgsql<inject key="DeploymentID" enableCopy="true"/>.postgres.database.azure.com --port=5432 --username=azureuser --dbname=sampledb
     ```
+    > **Note:** If you see any placeholder as `<DID>` in the url. Replace it with **<inject key="DeploymentID" enableCopy="true"/>** and run it.
   
    > **Note:** The dump script shouldn't be expected to run completely without errors. In particular, because the script will issue CREATE ROLE for every role existing in the source cluster, it's certain to get a “role already exists” error for the bootstrap superuser like azure_pg_admin or azure_superuser. This error is harmless and can be ignored. 
    
-17. Navigate back to Azure Portal where you connected to Bash and run the below command to see the migrated tables from the Single Postgres server.
+19. Navigate back to Azure Portal where you connected to Bash and run the below command to see the migrated tables from the Single Postgres server.
     
     ```
     \dt
@@ -179,7 +190,7 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     
     ![](Images/sampledbtable.png)
     
-18. Run the below command to see the migrated roles from the Single Postgres server.
+20. Run the below command to see the migrated roles from the Single Postgres server.
 
     ```
     \du
@@ -188,9 +199,9 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
     
     >**Note:** Here you can observe both the usernames of single and flexible serves which are ```azureuser``` and ```demouser```.
     
-19. You can also create roles by editing the **roles.sql** file.
+21. You can also create roles by editing the **roles.sql** file.
 
-20. You can also create new roles by following the below-given steps: 
+22. You can also create new roles by following the below-given steps: 
 
    -  Navigate to the path **C:\Program Files\PostgreSQL\11\bin (1)** and select the file **roles.sql (2)**.
 
@@ -213,9 +224,9 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
      psql -f roles.sql --host=flexiblepgsql<inject key="DeploymentID" enableCopy="false"/>.postgres.database.azure.com --port=5432 --username=azureuser --dbname=sampledb
      ```
     
-     >**Note:** Replace the `<DID>` with **<inject key="DeploymentID" enableCopy="true"/>** in the below command and run it.
+     >**Note:** If you see any placeholder as `<DID>` in the url. Replace it with **<inject key="DeploymentID" enableCopy="true"/>** and run it.
 
-21. Navigate back to Azure Portal where you have connected to sampledb server and run the below command to view the newly created role
+23. Navigate back to Azure Portal where you have connected to sampledb server and run the below command to view the newly created role
 
    ```
    \du
@@ -230,9 +241,6 @@ In this exercise, you will be migrating the database from a Single PostgreSQL se
    
 ## Summary
 
-In this exercise, you have covered the following:
-
-- Enabled the required extension in a flexible server.
-- Migrated the Data Base from Azure Database for PostgreSQL single server
+In this lab, you enabled the required extension on a flexible server and successfully migrated the database from an Azure Database for PostgreSQL single server.
 
    

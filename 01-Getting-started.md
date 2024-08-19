@@ -1,4 +1,4 @@
-# Getting Started with the lab
+# Getting Started with Migrate from Single Server to Postgresql SQL Server lab
 
 ## Overview
 
@@ -20,6 +20,8 @@ In this exercise, you will log in to the Azure Portal and review the lab environ
     
     
 ## Task 1: Log in to Azure Portal and verify the pre-deployed resources
+
+In this task, you will be signing in to Azure Portal and review the Resource Group. 
 
 1. Open Azure Portal from the desktop by double-clicking on it.
     
@@ -50,3 +52,7 @@ In this exercise, you will log in to the Azure Portal and review the lab environ
 7. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
 
 8. Click **Next** to proceed with the lab.
+
+## Summary
+
+In this task, you have signed in to Azure Portal and reviewed the Resource Group.
