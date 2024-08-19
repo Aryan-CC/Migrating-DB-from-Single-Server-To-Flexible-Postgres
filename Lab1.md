@@ -42,7 +42,7 @@ In this task, you will be deploying a Azure Database for PostgreSQL through Azur
 
 6. You have successfully created a **Azure Database for PostgreSQL servers** resource. Wait for the deployment to get completed.
 
-<validation step="5cd02f3f-7fe2-4b89-92a1-f69fae7306fd" />
+<validation step="f2ae7180-4546-477b-a273-f7533b5cae36" />
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
