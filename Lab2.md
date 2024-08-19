@@ -97,6 +97,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     
     - Migration name: Enter **Migrate-single-to-flexible-server (1)**
     - Migration option choose **Validate and Migrate**
+      
     
         ![](Images/img2-mig.png)
 
@@ -233,14 +234,13 @@ In this task, you will migrate your existing database from a PostgreSQL single s
    ```
    ![](Images/sqluser1.png) 
 
-<validation step="5cd02f3f-7fe2-4b89-92a1-f69fae7306fd" />
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+  - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+  - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-   > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
-   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
-   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.  
-   
+<validation step="5cd02f3f-7fe2-4b89-92a1-f69fae7306fd" /> 
+     
 ## Summary
 
 In this lab, you enabled the required extension on a flexible server and successfully migrated the database from an Azure Database for PostgreSQL single server.
