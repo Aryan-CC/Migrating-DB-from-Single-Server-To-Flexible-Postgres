@@ -239,7 +239,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-<validation step="5cd02f3f-7fe2-4b89-92a1-f69fae7306fd" /> 
+  <validation step="5cd02f3f-7fe2-4b89-92a1-f69fae7306fd" /> 
      
 ## Summary
 
