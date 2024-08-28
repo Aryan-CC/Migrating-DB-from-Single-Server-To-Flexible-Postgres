@@ -14,11 +14,12 @@ In this task, you will enable the necessary extensions on a flexible server in A
 1. In the **Azure portal**, open the Azure Cloud Shell by clicking on the cloud shell icon in the top menu bar.
 
     ![](Images/E2I1S1.png)
-2. After launching the Azure Cloud Shell, select the **Bash** option.
+   
+3. After launching the Azure Cloud Shell, select the **Bash** option.
 
     ![](Images/create-bash.png)
     
-3. Now on You have no storage to create storage account select **Mount storage account** and select the Available subscription from the drop down menu and then click on **Apply**.
+4. Now on You have no storage to create storage account select **Mount storage account** and select the Available subscription from the drop down menu and then click on **Apply**.
 
    ![](Images/storage-getting.png)
    
@@ -34,7 +35,7 @@ In this task, you will enable the necessary extensions on a flexible server in A
     - **Storage account**: Enter **stacc<inject key="DeploymentID" enableCopy="false"/>** **(4)**
     - **File Share**: Enter **blob** **(5)**
 
-    ![](Images/storage-create.png)
+      ![](Images/storage-create.png)
     
 9. Follow the below steps to connect to the **Azure Database for PostgreSQL single server**:
 
@@ -76,15 +77,13 @@ In this task, you will enable the necessary extensions on a flexible server in A
 16. Select the list of extensions obtained by running the command in step-6 on your Single server database to this server parameter and click **Save**.
     
     ![](Images/save.png)
-    
-    
+     
     > **Note:** You should wait for the deployment to complete before proceeding further.
        
-17. Once the deployment has succeeded, click on **Go to resource**.
+18. Once the deployment has succeeded, click on **Go to resource**.
     
     ![](Images/E2T1S13.png)
 
-    
 ## Task 2: Migrate Data Base from Azure Database for PostgreSQL single server
 
 In this task, you will migrate your existing database from a PostgreSQL single server to a flexible server, ensuring seamless operation in the new environment.
@@ -98,8 +97,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     - Migration name: Enter **Migrate-single-to-flexible-server (1)**
     - Migration option choose **Validate and Migrate**
       
-    
-        ![](Images/img2-mig.png)
+      ![](Images/img2-mig.png)
 
  3. Click **Next:Connect to Source >** and on the **Source** tab, and follow the below-mentioned instructions:
     
@@ -156,7 +154,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
 
       - Enter the password **<inject key="PostGre SQL Password" enableCopy="true"/>**
       
-      ![](Images/img6-mig.png)
+        ![](Images/img6-mig.png)
       
 15. Minimize the Azure Portal window and search for **Command Prompt (1)** from the Windows Start menu and select it **(2)**.
 
@@ -181,7 +179,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     ```
     > **Note:** If you see any placeholder as `<DID>` in the url. Replace it with **<inject key="DeploymentID" enableCopy="true"/>** and run it.
   
-   > **Note:** The dump script shouldn't be expected to run completely without errors. In particular, because the script will issue CREATE ROLE for every role existing in the source cluster, it's certain to get a “role already exists” error for the bootstrap superuser like azure_pg_admin or azure_superuser. This error is harmless and can be ignored. 
+    > **Note:** The dump script shouldn't be expected to run completely without errors. In particular, because the script will issue CREATE ROLE for every role existing in the source cluster, it's certain to get a “role already exists” error for the bootstrap superuser like azure_pg_admin or azure_superuser. This error is harmless and can be ignored. 
    
 19. Navigate back to Azure Portal where you connected to Bash and run the below command to see the migrated tables from the Single Postgres server.
     
@@ -196,6 +194,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     ```
     \du
     ```
+    
     ![](Images/du.png)
     
     >**Note:** Here you can observe both the usernames of single and flexible serves which are ```azureuser``` and ```demouser```.
@@ -233,16 +232,14 @@ In this task, you will migrate your existing database from a PostgreSQL single s
    \du
    ```
    ![](Images/sqluser1.png) 
+   
+<validation step="5cd02f3f-7fe2-4b89-92a1-f69fae7306fd" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
   - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-  <validation step="5cd02f3f-7fe2-4b89-92a1-f69fae7306fd" /> 
-     
 ## Summary
 
 In this lab, you enabled the required extension on a flexible server and successfully migrated the database from an Azure Database for PostgreSQL single server.
-
-   
