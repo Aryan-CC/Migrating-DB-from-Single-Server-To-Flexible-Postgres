@@ -135,7 +135,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
 
 8. Select the migration name in the grid to see the details of that migration.
     
-    ![](Images/sampledb.png)
+    ![](Images/sampledb-1.png)
     
 9. Click on the **Refresh** button to get the latest status of the migration. Over time, the migration will succeed or fail with appropriate errors.
    
@@ -171,13 +171,13 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     cd C:\Program Files\PostgreSQL\11\bin
     ```
                                                                                      
-17. Run the below command.
+17. Run the below command, this is used to export all **PostgreSQL roles (users and permissions)** from a specified **database (sampledb) on a remote Azure PostgreSQL server** to a file named **roles.sql**. 
 
     ```
     pg_dumpall -r --host=pgsql<inject key="DeploymentID" enableCopy="true"/>.postgres.database.azure.com --port=5432 --username=demouser@pgsql<inject key="DeploymentID" enableCopy="true"/> --database=sampledb > roles.sql
     ```
     
-18. Run the below command.
+18. Run the below command, this is used to execute SQL commands from the file **roles.sql** on a **PostgreSQL database (sampledb)** hosted on a specified **Azure PostgreSQL server**.
 
     ```
     psql -f roles.sql --host=flexiblepgsql<inject key="DeploymentID" enableCopy="true"/>.postgres.database.azure.com --port=5432 --username=azureuser --dbname=sampledb
