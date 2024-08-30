@@ -97,9 +97,14 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     - Migration name: Enter **Migrate-single-to-flexible-server (1)**
     - Migration option choose **Validate and Migrate**
       
-      ![](Images/img2-mig.png)
 
- 3. Click **Next:Connect to Source >** and on the **Source** tab, and follow the below-mentioned instructions:
+ 3. Click **Next:Connect to Source >**
+
+    - Use Runtime Server : **No (1)**
+
+     ![](Images/runtime_1.png)
+    
+ 3. Click **Next : Connect to Source >** and on the **Source** tab, and follow the below-mentioned instructions:
     
     - Subscription: Choose the default subscription **(1)**
     - Resource group: Choose **ODL-SinToFlexible-<inject key="DeploymentID" enableCopy="true"/> (2)** from drop-down list
