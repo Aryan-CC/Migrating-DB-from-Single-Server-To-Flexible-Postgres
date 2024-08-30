@@ -98,7 +98,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     - Migration option choose **Validate and Migrate**
       
 
- 3. Click **Next:Connect to Source >**
+ 3. Click **Next: Select Runtime server**
 
     - Use Runtime Server : **No (1)**
 
@@ -141,7 +141,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
    
 10. Once the migration has succeeded, you should be able to see the database listed with the status as **Complete**.
     
-    ![](Images/lab2-2.png)
+    ![](Images/sampledb.png)
 
 11. Navigate back to **flexiblepgsql<inject key="DeploymentID" enableCopy="false"/>** and select **Databases (1)** from left menu under Settings. Now you will be able to see the migrated database **sampledb (2)**.
     
@@ -161,7 +161,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
       
         ![](Images/img6-mig.png)
       
-15. Minimize the Azure Portal window and search for **Command Prompt (1)** from the Windows Start menu and select it **(2)**.
+15. Minimize the **Azure Portal** window and search for **Command Prompt (1)** from the Windows Start menu and select it **(2)**.
 
     ![](Images/cmd.png)
     
@@ -186,7 +186,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
   
     > **Note:** The dump script shouldn't be expected to run completely without errors. In particular, because the script will issue CREATE ROLE for every role existing in the source cluster, it's certain to get a “role already exists” error for the bootstrap superuser like azure_pg_admin or azure_superuser. This error is harmless and can be ignored. 
    
-19. Navigate back to Azure Portal where you connected to Bash and run the below command to see the migrated tables from the Single Postgres server.
+19. Navigate back to **Azure Portal** where you connected to **Bash** and run the below command to see the migrated tables from the Single Postgres server.
     
     ```
     \dt
@@ -231,7 +231,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     
      >**Note:** If you see any placeholder as `<DID>` in the url. Replace it with **<inject key="DeploymentID" enableCopy="true"/>** and run it.
 
-23. Navigate back to Azure Portal where you have connected to sampledb server and run the below command to view the newly created role
+23. Navigate back to **Azure Portal** where you have connected to **sampledb server** and run the below command to view the newly created role
 
    ```
    \du
