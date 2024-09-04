@@ -113,9 +113,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     - Password: Enter the value **<inject key="PostGre SQL Password" enableCopy="true"/> (4)**
     - Test Connection: Click on **Connect to Source (5)**
   
-        ![](Images/DB-03.png)
-
-        ![](Images/DB-03-1.png)
+        ![](Images/final-01.png)
     
  4. Click **Next: Select migration target** and under this tab, follow the below-mentioned instructions:
     
@@ -130,7 +128,7 @@ In this task, you will migrate your existing database from a PostgreSQL single s
 
 6. In the **Summary** tab, click on **Start Validation and Migration**.
 
-    ![](Images/lab2-1.png)
+    ![](Images/summary-01.png)
     
 7. You should automatically be redirected to the **Migration** page of Flexible Server. It should have a new entry for the recently created migration.
     
