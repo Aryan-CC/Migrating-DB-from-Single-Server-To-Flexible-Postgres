@@ -95,10 +95,11 @@ In this task, you will migrate your existing database from a PostgreSQL single s
 2. On the **Setup** page, follow the below instructions:
     
     - Migration name: Enter **Migrate-single-to-flexible-server (1)**
-    - Migration option choose **Validate and Migrate**
-      
+    - Migration option choose **Validate and Migrate (2)**
 
- 3. Click **Next: Select Runtime server**
+     ![](Images/db-01-2.png)
+   
+ 4. Click **Next: Select Runtime server**
 
     - Use Runtime Server : **No (1)**
 
@@ -110,24 +111,24 @@ In this task, you will migrate your existing database from a PostgreSQL single s
     - Resource group: Choose **ODL-SinToFlexible-<inject key="DeploymentID" enableCopy="true"/> (2)** from drop-down list
     - Server name: Leave it as **Default (3)**
     - Password: Enter the value **<inject key="PostGre SQL Password" enableCopy="true"/> (4)**
-    - Test Connection: Click on **Connect to Source**
+    - Test Connection: Click on **Connect to Source (5)**
   
-        ![](Images/img3-mig.png)
+        ![](Images/final-01.png)
     
  4. Click **Next: Select migration target** and under this tab, follow the below-mentioned instructions:
     
     - Password: Enter the value **<inject key="PostGre SQL Password" enableCopy="true"/> (1)**
     - Test Connection: Click on **Connect to Target (2)**
     
-      ![](Images/img4-mig.png)
+      ![](Images/DB-04.png)
         
 5. Click on **Next: Select database(s) for migration** and on the select database page, select **sampledb** database (1). Click on **Next: Summary > (2)** button.
 
-    ![](Images/img5-mig.png)
+    ![](Images/DB-05.png)
 
 6. In the **Summary** tab, click on **Start Validation and Migration**.
 
-    ![](Images/lab2-1.png)
+    ![](Images/summary-01.png)
     
 7. You should automatically be redirected to the **Migration** page of Flexible Server. It should have a new entry for the recently created migration.
     
