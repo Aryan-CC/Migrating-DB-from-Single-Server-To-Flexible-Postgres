@@ -20,7 +20,7 @@ In this task, you will be deploying a Azure Database for PostgreSQL through Azur
 
     ![](Images/img2.png)
 
-3. In the **Basics** tab, fill in the following details and leave the others as default and click on **Review and Create** and subsequently click on **Create**:
+3. In the **Basics** tab, fill in the following details and leave the others as default and click on **Review and Create (9)** and subsequently click on **Create**:
 
      |Setting|Value|
      |:----|:----|
@@ -28,13 +28,14 @@ In this task, you will be deploying a Azure Database for PostgreSQL through Azur
      |**Resource Group**| **Postgres-<inject key="DeploymentID" enableCopy="false" />** (2)|
      | **Server name**|**postgres<inject key="DeploymentID" enableCopy="false" />** (3)|
      | **Region**|**West US** (4)|
-     |**Admin Username** |**azureuser** (5)|
-     |**Password** |**Password.1!!** (6)|
-     |**Confirm Password** |**Password.1!!**(7)|
+     | **Authentication method** | **PostgreSQL authentication only** (5)|
+     |**Admin Username** |**azureuser** (6)|
+     |**Password** |**Password.1!!** (7)|
+     |**Confirm Password** |**Password.1!!**(8)|
   
      ![](Images/img3.1.png)
   
-     ![](Images/img4.png)
+     ![](Images/updatedlab1.png)
 
 5. In the pop-up that appears in the **Configure IP address in Firewall Rules** click **Create server without firewall rules**
    
@@ -46,7 +47,7 @@ In this task, you will be deploying a Azure Database for PostgreSQL through Azur
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
   - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
   - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
-  - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+  - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 <validation step="f2ae7180-4546-477b-a273-f7533b5cae36" />
 
