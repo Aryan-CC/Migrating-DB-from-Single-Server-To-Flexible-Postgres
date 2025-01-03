@@ -1,6 +1,8 @@
 # Lab 2: Migrating the database from a Single PostgreSQL server to Flexible PostgreSQL Server using an offline method
 
-In this Lab, you will be migrating the database from a Single PostgreSQL server to a Flexible PostgreSQL Server using the new Migration (Preview) tool.
+## Overview
+
+In this Lab, you will be migrating the database from a Single PostgreSQL server to a Flexible PostgreSQL Server using the new Migration tool.
 
 ## Lab Objectives:
 
@@ -234,10 +236,10 @@ In this task, you will migrate your existing database from a PostgreSQL single s
 
 23. Navigate back to **Azure Portal** where you have connected to **sampledb server** and run the below command to view the newly created role
 
-   ```
-   \du
-   ```
-   ![](Images/sqluser1.png) 
+    ```
+    \du
+    ```
+    ![](Images/sqluser1.png) 
    
 <validation step="5cd02f3f-7fe2-4b89-92a1-f69fae7306fd" />
 
